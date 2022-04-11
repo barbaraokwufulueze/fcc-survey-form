@@ -1,0 +1,170 @@
+:root {
+  --color-white: #f3f3f3;
+  --color-darkblue: #1b1b32;
+  --color-darkblue-form: rgba(27, 27, 50, 0.8);
+  --color-green: #37af65;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-white);
+}
+
+/* A mobile friendly option to background-attachment*/
+body::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background-image: linear-gradient(
+      115deg,
+      rgba(50, 50, 152, 0.8),
+      rgba(125, 125, 201, 0.7)
+    ),
+    url("tech-women.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container,
+.header,
+form,
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 80rem;
+  margin: 3rem auto 0 auto;
+}
+
+.header {
+  gap: 0.6rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+  align-self: center;
+  text-align: center;
+}
+
+#title {
+  font-size: 3.2rem;
+  font-weight: 400;
+}
+
+#description {
+  font-style: italic;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+form {
+  gap: 2rem;
+  width: 90%;
+  background-color: var(--color-darkblue-form);
+  margin: 0 auto;
+  padding: 4rem;
+}
+
+.form-field {
+  justify-items: left;
+  gap: 1rem;
+}
+
+.input,
+.comment,
+button,
+select {
+  font-size: 1.6rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  height: 4rem;
+  width: 100%;
+  padding: 0.35rem 0.7rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+span {
+  font-size: 1.6rem;
+  font-style: italic;
+}
+
+.comment {
+  min-height: 12rem;
+  padding: 0.625rem;
+  resize: vertical;
+}
+
+.radio,
+.check {
+  margin-right: 0.6rem;
+}
+
+.submit {
+  display: block;
+  width: 100%;
+  background: var(--color-green);
+  border: none;
+  border-radius: 2px;
+  padding: 0.75rem;
+  cursor: pointer;
+}
+
+/**********************
+    MEDIA QUERIES
+**********************/
+@media (max-width: 80rem) {
+  .container {
+    max-width: 76rem;
+  }
+}
+
+@media (max-width: 58rem) {
+  .container {
+    max-width: 55rem;
+  }
+}
+
+@media (max-width: 40rem) {
+  .container {
+    max-width: 100%;
+  }
+
+  .header {
+    width: 90%;
+    padding: 0 2rem;
+  }
+
+  #title {
+    line-height: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  form {
+    width: 95%;
+    gap: 3rem;
+    padding: 1.4rem;
+  }
+}
