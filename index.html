@@ -29,7 +29,7 @@
       <form action="https://www.freecatphotoapp.com/submit-cat-photo">
         <div class="form-field">
           <label for="name">Name</label>
-          <input id="name" class="input" type="text" placeholder="Jane Smith" />
+          <input id="name" class="input" type="text" placeholder="Jane Smith" required />
         </div>
         <div class="form-field">
           <label for="name">Email</label>
@@ -38,11 +38,11 @@
             class="input"
             type="email"
             placeholder="email@example.com"
-          />
+          required />
         </div>
         <div class="form-field">
           <label for="age">Age <span> (optional)</span></label>
-          <input id="number" class="input" type="number" placeholder="38" />
+          <input id="number" class="input" type="number" min="14" step="1" placeholder="38" />
         </div>
         <div class="form-field select">
           <label for="role"
@@ -203,7 +203,7 @@
           /></textarea>
         </div>
         <div class="form-field">
-          <button id="submit" class="submit" type="button">Submit</button>
+          <button id="submit" class="submit" type="submit">Submit</button>
         </div>
       </form>
     </div>

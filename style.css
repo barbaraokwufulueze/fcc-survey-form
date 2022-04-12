@@ -1,7 +1,7 @@
 :root {
   --color-white: #f3f3f3;
-  --color-darkblue: #1b1b32;
-  --color-darkblue-form: rgba(27, 27, 50, 0.8);
+  --color-deepblue: #1b1b32;
+  --color-deepblue-form: rgba(27, 27, 50, 0.8);
   --color-green: #37af65;
 }
 
@@ -24,7 +24,6 @@ body {
   color: var(--color-white);
 }
 
-/* A mobile friendly option to background-attachment*/
 body::before {
   content: "";
   width: 100%;
@@ -33,7 +32,7 @@ body::before {
   left: 0;
   position: fixed;
   z-index: -1;
-  background: var(--color-darkblue);
+  background: var(--color-deepblue);
   background-image: linear-gradient(
       115deg,
       rgba(50, 50, 152, 0.8),
@@ -80,7 +79,7 @@ form,
 form {
   gap: 2rem;
   width: 90%;
-  background-color: var(--color-darkblue-form);
+  background-color: var(--color-deepblue-form);
   margin: 0 auto;
   padding: 4rem;
 }
@@ -104,6 +103,10 @@ select {
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+input:invalid {
+  border: solid red 2px;
 }
 
 span {
