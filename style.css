@@ -1,3 +1,6 @@
+/**********************
+    GENERAL
+**********************/
 :root {
   --color-white: #f3f3f3;
   --color-deepblue: #1b1b32;
@@ -44,6 +47,46 @@ body::before {
   background-repeat: no-repeat;
 }
 
+/**********************
+    MEDIA QUERIES
+**********************/
+@media (max-width: 80rem) {
+  .container {
+    max-width: 76rem;
+  }
+}
+
+@media (max-width: 58rem) {
+  .container {
+    max-width: 55rem;
+  }
+}
+
+@media (max-width: 40rem) {
+  .container {
+    max-width: 100%;
+  }
+
+  .header {
+    width: 90%;
+    padding: 0 2rem;
+  }
+
+  #title {
+    line-height: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  form {
+    width: 95%;
+    gap: 3rem;
+    padding: 1.4rem;
+  }
+}
+
+/**********************
+    FORM-SECTION
+**********************/
 .container,
 .header,
 form,
@@ -133,41 +176,4 @@ span {
   border-radius: 2px;
   padding: 0.75rem;
   cursor: pointer;
-}
-
-/**********************
-    MEDIA QUERIES
-**********************/
-@media (max-width: 80rem) {
-  .container {
-    max-width: 76rem;
-  }
-}
-
-@media (max-width: 58rem) {
-  .container {
-    max-width: 55rem;
-  }
-}
-
-@media (max-width: 40rem) {
-  .container {
-    max-width: 100%;
-  }
-
-  .header {
-    width: 90%;
-    padding: 0 2rem;
-  }
-
-  #title {
-    line-height: 4rem;
-    margin-bottom: 1rem;
-  }
-
-  form {
-    width: 95%;
-    gap: 3rem;
-    padding: 1.4rem;
-  }
 }
