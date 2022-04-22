@@ -177,3 +177,13 @@ span {
   padding: 0.75rem;
   cursor: pointer;
 }
+
+.footer {
+  margin: 2rem;
+  padding: 4rem;
+  text-align: center;
+}
+
+.footer a {
+  text-decoration: none;
+}
